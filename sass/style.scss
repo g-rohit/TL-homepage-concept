@@ -317,6 +317,10 @@ p {
     height: auto;
 }
 
+.navbarItems {
+    margin-top: 10px;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -412,6 +416,10 @@ p {
             // line-height: 50px;
             font-weight: 400;
         }
+    }
+
+    #searchInputBarIndex1 {
+        min-width: 600px;
     }
 }
 
@@ -672,17 +680,19 @@ p {
 
     .searchFormContainer {
 
+        
         select,
         input {
             width: 100%;
         }
 
-        input {
+        input, #searchInputBarIndex1 {
             min-width: 300px;
 
             &::placeholder {
                 font-size: 12px;
             }
+
 
         }
 
@@ -742,12 +752,20 @@ p {
             }
         }
     }
+
+    .btn-large {
+        padding: 4px 16px;
+    }
 }
 
 
 @media all and (max-width: 480px) {
 
 
+    .navbarItems {
+        width: 100%;
+        margin-top: 10px;
+    }
  
 
 

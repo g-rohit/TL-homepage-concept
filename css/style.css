@@ -286,6 +286,10 @@ p {
   height: auto;
 }
 
+.navbarItems {
+  margin-top: 10px;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -397,6 +401,10 @@ p {
 
 .searchFormContainer input::placeholder {
   font-weight: 400;
+}
+
+.searchFormContainer #searchInputBarIndex1 {
+  min-width: 600px;
 }
 
 .btn-search {
@@ -611,19 +619,19 @@ p {
   .searchFormContainer input {
     width: 100%;
   }
-  .searchFormContainer input {
+  .searchFormContainer input, .searchFormContainer #searchInputBarIndex1 {
     min-width: 300px;
   }
-  .searchFormContainer input::-webkit-input-placeholder {
+  .searchFormContainer input::-webkit-input-placeholder, .searchFormContainer #searchInputBarIndex1::-webkit-input-placeholder {
     font-size: 12px;
   }
-  .searchFormContainer input:-ms-input-placeholder {
+  .searchFormContainer input:-ms-input-placeholder, .searchFormContainer #searchInputBarIndex1:-ms-input-placeholder {
     font-size: 12px;
   }
-  .searchFormContainer input::-ms-input-placeholder {
+  .searchFormContainer input::-ms-input-placeholder, .searchFormContainer #searchInputBarIndex1::-ms-input-placeholder {
     font-size: 12px;
   }
-  .searchFormContainer input::placeholder {
+  .searchFormContainer input::placeholder, .searchFormContainer #searchInputBarIndex1::placeholder {
     font-size: 12px;
   }
   .searchFormContainer button {
@@ -670,6 +678,16 @@ p {
     border-right: 1px solid transparent;
     min-height: auto;
     height: 100%;
+  }
+  .btn-large {
+    padding: 4px 16px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .navbarItems {
+    width: 100%;
+    margin-top: 10px;
   }
 }
 
